@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "tap-smartsheet"
 version = "0.0.1"
-description = "`tap-smartsheet` is a Singer tap for SmartSheet, built with the Meltano SDK for Singer Taps."
-authors = ["bdc"]
+description = "`tap-smartsheet` is a Singer tap for Smartsheet, built with the Meltano SDK for Singer Taps."
+authors = ["Niall Woodward"]
 keywords = [
     "ELT",
-    "SmartSheet",
+    "Smartsheet",
 ]
 license = "Apache 2.0"
 
@@ -13,6 +13,7 @@ license = "Apache 2.0"
 python = "<3.11,>=3.6.2"
 requests = "^2.25.1"
 singer-sdk = "^0.4.2"
+smartsheet-python-sdk = "^2.105.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
@@ -39,4 +40,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 # CLI declaration
-tap-smartsheet = 'tap_smartsheet.tap:TapSmartSheet.cli'
+tap-smartsheet = 'tap_smartsheet.tap:TapSmartsheet.cli'
